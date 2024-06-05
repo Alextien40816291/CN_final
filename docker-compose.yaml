@@ -1,6 +1,8 @@
 version: '3'
 services:
   backend:
+    volumes:
+      - ./data:/app/upload
     build:
       context: ./backend
     ports:
